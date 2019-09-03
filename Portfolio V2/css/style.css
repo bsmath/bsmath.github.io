@@ -1,0 +1,45 @@
+/* Polices d'écriture */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgba(0, 210, 0, 0.5)
+}
+
+/* Autres */
+.cursor-help {
+    cursor: help;
+}
+
+/* Navigation */
+.navbar {
+    transition: all .2s;
+}
+
+.navbar-brand {
+    font-family: "Dancing Script";
+    font-size: 1.7rem;
+    transition: color .2s;
+}
+
+.active .nav-link {
+    color: var(--primary) !important;
+}
+
+/* Background accueil */
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../res/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Corps */
+.section-title {
+    font-family: "Dancing Script";
+}
