@@ -7,7 +7,7 @@ html {
 }
 
 ::selection {
-    background-color: rgba(0, 210, 0, 0.5)
+    background-color: rgba(0, 210, 0, 0.5);
 }
 
 /* Autres */
@@ -28,6 +28,42 @@ html {
 
 .active .nav-link {
     color: var(--primary) !important;
+}
+
+/* Border animé sous les liens */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: rgba(0, 210, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    transition: all ease-in-out .1s;
+}
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: var(--primary);
+    transition: all ease-in-out .1s;
+}
+.nav-link:hover::after{
+    width: 100%;
+    left: 0;
 }
 
 /* Background accueil */
