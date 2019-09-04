@@ -1,32 +1,177 @@
-/* Fonts */
+/* Polices d'écriture */
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:600&display=swap');
+
+.font-muli {
+    font-family: "Muli";
+}
+/* Fin fonts */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+::selection {
+    background-color: rgba(0, 210, 0, 0.5);
+}
+
+/* Autres */
+.cursor-help {
+    cursor: help;
+}
+
+.interligne-1 {
+    line-height: 1.8rem;
+}
+
+/* Navigation */
+.navbar {
+    transition: all .2s;
+}
 
 .navbar-brand {
     font-family: "Dancing Script";
-    color: var(--primary) !important;
-    font-weight: bold;
-    font-size: 32px;
+    font-size: 1.7rem;
+    transition: color .2s;
 }
-.navbar-brand:hover {
-    color: rgba(0, 76, 255) !important;
-}
-
-.nav-link:hover {
-    color: var(--primary) !important;
-}
-
-.dropdown-item:hover {
-    background-color: rgba(0, 123, 255, 0.1) !important;
-} 
 
 .active .nav-link {
     color: var(--primary) !important;
 }
 
+/* Border animé sous les liens */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: rgba(0, 210, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    transition: all ease-in-out .1s;
+}
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: var(--primary);
+    transition: all ease-in-out .1s;
+}
+.nav-link:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+/* Background accueil */
 .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../res/background.jpg');
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+/* Corps */
+.section-title {
+    font-family: "Dancing Script";
+}
+
+/* Section contact */
+#contact {
+    background: linear-gradient(rgba(0, 70, 0, 0.6), rgba(0, 70, 0, 0.6)), url('../res/section-contact2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.social {
+    font-size: 1.4rem;
+}
+
+/* Réalisations */ /* TODO : A modifier et mettre en javascript et plus jolie */
+#veille {
+    position: relative;
+}
+#veille::after {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20%;
+    content: 'Veille Technologique';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 190, 0, 0.7);
+    border-radius: 25px;
+    transition: all ease-in-out .2s;
+    opacity: 0;
+}
+#veille:hover::after {
+    opacity: 1;
+}
+
+#nkauto {
+    position: relative;
+}
+#nkauto::after {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20%;
+    content: 'NK Auto';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 190, 0, 0.7);
+    border-radius: 25px;
+    transition: all ease-in-out .2s;
+    opacity: 0;
+}
+#nkauto:hover::after {
+    opacity: 1;
+}
+
+#facilieam {
+    position: relative;
+}
+#faciliteam::after {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20%;
+    content: 'Faciliteam';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 190, 0, 0.7);
+    border-radius: 25px;
+    transition: all ease-in-out .2s;
+    opacity: 0;
+}
+#faciliteam:hover::after {
+    opacity: 1;
 }

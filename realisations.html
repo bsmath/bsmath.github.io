@@ -19,10 +19,10 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
         <div class="container">
             <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
-            <h2 id="navbar-brand" class="navbar-brand">Bes.Mathieu</h2>
+            <h2 id="navbar-brand" class="navbar-brand text-primary">Bes.Mathieu</h2>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences.html">Compétences</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Parcours</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Réalisations</a>
                     </li>
                     <li class="nav-item">
@@ -47,38 +47,29 @@
         </div> 
     </nav><!-- /Navigation-->
     
-    <!-- Jumbotron -->
-    <div class="jumbotron rounded-0 text-white d-flex">
-        <div class="row mx-auto my-auto">
-            <div class="col text-center">
-                <img height=256 class="shadow text-center rounded-circle border-bottom border-right border-left border-dark" src="res/avatar3.jpg"><br/>
-                <a id="btn-portfolio" href="#formation" class="mt-4 btn btn-lg btn-outline-light jumbotron-title text-weight-bold text-uppercase">Portfolio</a>
+    <!-- Réalisations -->
+    <section style="height: 90vh;" id="realisations" class="mt-5 py-5">
+        <div class="container-fluid mt-xl-5 py-xl-5">
+            <div class="row">
+                <a href="sites/Veille Technologique/index.html" id="veille" class="col-12 col-xl-4 py-2">
+                    <img class="img-thumbnail" src="res/veilletechno.png">
+                </a>
+                <a href="https://bsmathieu.yo.fr/" id="nkauto" class="col-12 col-xl-4 py-2">
+                    <img class="img-thumbnail" src="res/nkauto.png">
+                </a>
+                <a href="sites/Faciliteam/index.html" id="faciliteam" class="col-12 col-xl-4 py-2">
+                    <img class="img-thumbnail" src="res/faciliteam.png">
+                </a>
             </div>
         </div>
-    </div>
+    </section><!-- /Réalisations -->
 
-    <section id="formation" class="container">
-        <h1 class="section-title text-center">Ma formation <i style="font-size: 2rem;" class="text-primary fas fa-pencil-alt"></i></h1>
-        <hr class="col-1 border-primary">
-        
-        <p class="text-justify pb-3">
-            Étudiant au BTS SIO du lycée du Parc des Loges. J'ai décidé de choisir la spécialité <span id="slam-tooltip" class="cursor-help text-uppercase text-primary" data-toggle="tooltip" data-placement="bottom" title="Solutions logicielles et applications métiers">Slam*</span> pour une approche plus approfondie de la programmation.
-        </p>
-
-        <!-- TODO: À améliorer largement :) -->
-        <div class="row mt-3">
-            <div class="col">
-                <h1 class="display-4 text-center"><i class="text-danger fab fa-html5"></i><i class="text-primary fab fa-css3-alt"></i><i class="text-warning fab fa-html5"></i></h1>
-                <p class="text-center text-secondary lead">Web</p>
-            </div>
-            <div class="col">
-                <h1 class="display-4 text-center"><i class="text-danger fab fa-java"></i></h1>
-                <p class="text-center text-secondary lead">Java</p>
-            </div>
-            <div class="col">
-                <h1 class="display-4 text-center"><i class="text-info fab fa-python"></i></h1>
-                <p class="text-center text-secondary lead">Python</p>
-            </div>
+    <!-- Contact -->
+    <footer id="contact" class="container-fluid py-3 text-light">
+        <div class="container text-center">
+            <a class="text-light" href=""><i class="social fab fa-linkedin px-2"></i></a>
+            <a class="text-light" href=""><i class="social fab fa-instagram px-2"></i></a>
+            <a class="text-light" href=""><i class="social fab fa-twitter px-2"></i></a>
         </div>
     </section>
 

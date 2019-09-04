@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <!-- Balises meta -->
+    <!-- Balise meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Titre -->
-    <title>Bs.Mathieu - Portfolio BTS SIO</title>
+    <title>Bes.Mathieu - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="res/favicon.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Icones -->
     <script src="https://kit.fontawesome.com/1a2c59f916.js"></script>
 </head>
-
 <body>
-    <!--Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-light fixed-top">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Bs.Mathieu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+            <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
+            <h2 id="navbar-brand" class="navbar-brand">Bes.Mathieu</h2>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Mon parcours</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Mes projets
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="sites/Veille Technologique/index.html">Veille
-                                technologique</a>
-                            <a class="dropdown-item" href="https://nkauto91.fr/">NK Auto (stage)</a>
-                            <a class="dropdown-item" href="sites/Faciliteam/index.html">Faciliteam</a>
-                        </div>
+                        <a class="nav-link" href="competences.html">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="moi.html">Qui suis-je ?</a>
+                        <a class="nav-link" href="realisations.html">Réalisations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron mb-0">
-        <div class="container text-center mt-5 pt-5 text-light">
-            <h1 class="display-4 mt-5 pt-5">Bienvenue sur mon portfolio !</h1>
-            <p class="lead">Je m'appelle Mathieu BES, j'ai 20 ans et je suis étudiant au BTS SIO du lycée du Parc des
-                loges à Evry.</p>
-            <hr class="my-4 col-1 border-light">
-            <p class="lead">
-                <a class="btn btn-outline-light btn-lg" href="moi.html" role="button">En savoir plus sur moi</a>
-            </p>
-            <div class="mt-5 pt-5">
-                <a class="btn btn-outline-primary btn-lg" href="#">
-                    <i class="fab fa-facebook-square"></i> Facebook
-                </a>
-                <a class="btn btn-outline-info btn-lg" href="#">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a class="btn btn-outline-danger btn-lg" href="#">
-                    <i class="fas fa-file-alt"></i> Mon C.V.
-                </a>
+        </div> 
+    </nav><!-- /Navigation-->
+    
+    <!-- Jumbotron -->
+    <div id="banniere" class="jumbotron rounded-0 text-white d-flex">
+        <div class="row mx-auto my-auto">
+            <div class="col text-center">
+                <img height=256 class="shadow text-center rounded-circle border-bottom border-right border-left border-dark" src="res/avatar.jpg"><br/>
+                <a id="btn-portfolio" href="#formation" class="mt-4 btn btn-lg btn-outline-light jumbotron-title text-weight-bold text-uppercase">Portfolio</a>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
+    <!-- Formation -->
+    <section id="formation" class="container pb-5">
+        <h1 class="section-title text-center">Ma formation <i style="font-size: 2rem;" class="ml-2 text-primary fas fa-pencil-alt"></i></h1>
+        <hr class="my-4 col-1 border-primary">
+        
+        <p class="interligne-1 text-justify pb-3 font-muli">
+                Diplômé d'un baccalauréat <span class="cursor-help text-uppercase text-primary" data-toggle="tooltip" data-placement="bottom" title="Science Technologique du Management et de la Gestion, option Systèmes d'Informations et de Gestion">STMG*</span> au sein du Lycée Polyvalent du Parc des loges, j'ai par la suite entamé une formation dans l'optique de décrocher mon diplôme de Technicien Supérieur <span class="cursor-help text-uppercase text-primary" data-toggle="tooltip" data-placement="bottom" title="Services informatiques aux Organisations">SIO*</span>, spécialité Solution logiciel et applications métiers (SLAM). Cette formation m'a permit d'aborder différents aspect de la programmation notamment le <a href="https://bsmathieu.yo.fr/" target="_blank">développement de site web</a> ainsi que la production de solutions applicatives.
+        </p>
 
+        <!-- TODO: À améliorer largement :) -->
+        <div class="row mt-5">
+            <div class="col-6 col-lg-3">
+                <img class="mx-auto d-block p-3" height=128 src="res/web-icon.png">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="mx-auto d-block" height=128 src="res/java-icon.png">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="mx-auto d-block" height=128 src="res/python-icon.png">
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="mx-auto d-block" height=128 src="res/phpsql-icon.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="container-fluid py-3 text-light">
+        <div class="container text-center">
+            <a class="text-light" href=""><i class="social fab fa-linkedin px-2"></i></a>
+            <a class="text-light" href=""><i class="social fab fa-instagram px-2"></i></a>
+            <a class="text-light" href=""><i class="social fab fa-twitter px-2"></i></a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>

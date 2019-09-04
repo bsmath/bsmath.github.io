@@ -1,1 +1,0 @@
-# bsmath.github.io
