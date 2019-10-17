@@ -94,6 +94,21 @@ p {
     font-family: "Dancing Script";
 }
 
+/* Bulle de commentaire */
+.speech-bubble {
+    padding: 10px 15px;
+    background-color: var(--light);
+}
+
+.speech-bubble::after {
+    border-left: 20px solid transparent;
+    border-top: 20px solid #efefef;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    right: 20px;
+}
+
 /* Section contact */
 #contact {
     background: linear-gradient(rgba(0, 70, 0, 0.6), rgba(0, 70, 0, 0.6)), url('../res/section-contact2.jpg');
