@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <!-- Balise meta -->
     <meta charset="UTF-8">
@@ -13,19 +14,21 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/circle-progressbar.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Icones -->
     <script src="https://kit.fontawesome.com/1a2c59f916.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
         <div class="container">
             <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
             <h2 id="navbar-brand text-primary" class="navbar-brand text-primary">Bes.Mathieu</h2>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,13 +47,116 @@
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </nav><!-- /Navigation-->
-    
+
     <!-- Compétences -->
     <section id="competences" class="mt-5 py-5">
         <div class="container">
-            <embed class="mx-auto d-block" src="res/cv_mathieu.pdf" style="width: 50vw; height: 90vh;" type='application/pdf'/>
+            <h1 class="section-title text-primary">Compétences, diplômes et formations</h1>
+
+            <div class="row py-3">
+                <div class="col-4">
+                    <!-- HTML -->
+                    <div class="progress mx-auto" data-value='90'>
+                        <span class="progress-left">
+                            <span class="progress-bar" style="border-color: var(--orange);"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar" style="border-color: var(--orange);"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">HTML<sup class="h6">90%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+                <div class="col-4">
+                    <!-- CSS -->
+                    <div class="progress mx-auto" data-value='75'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">CSS<sup class="h6">75%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+                <div class="col-4">
+                    <!-- JS -->
+                    <div class="progress mx-auto" data-value='42'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-warning"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-warning"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">JS<sup class="h6">42%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-4">
+                    <!-- PHP -->
+                    <div class="progress mx-auto" data-value='50'>
+                        <span class="progress-left">
+                            <span class="progress-bar" style="border-color: #674172;"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar" style="border-color: #674172;"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">PHP<sup class="h6">50%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+                <div class="col-4">
+                    <!-- JAVA -->
+                    <div class="progress mx-auto" data-value='69'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">JAVA<sup class="h6">69%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+                <div class="col-4">
+                    <!-- PYTHON -->
+                    <div class="progress mx-auto" data-value='72'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-info"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-info"></span>
+                        </span>
+                        <div
+                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h4 font-weight-bold">Python<sup class="h6">72%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+            </div>
+
         </div>
     </section><!-- /Compétences -->
 
@@ -66,12 +172,20 @@
             <a class="text-light" href=""><i class="social fab fa-instagram px-2"></i></a>
             <a class="text-light" href=""><i class="social fab fa-twitter px-2"></i></a>
         </div>
-    </section>
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/circle-progressbar.js"></script>
+        <script src="js/app.js"></script>
 </body>
+
 </html>
