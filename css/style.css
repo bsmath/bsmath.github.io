@@ -103,10 +103,10 @@ p {
 .speech-bubble::after {
     border-left: 20px solid transparent;
     border-top: 20px solid #efefef;
-    bottom: -20px;
+    top: 20px;
     content: "";
     position: absolute;
-    right: 20px;
+    left: 12px;
 }
 
 /* Section contact */
@@ -119,74 +119,4 @@ p {
 
 .social {
     font-size: 1.4rem;
-}
-
-/* Réalisations */ /* TODO : A modifier et mettre en javascript et plus jolie */
-#veille {
-    position: relative;
-}
-#veille::after {
-    font-family: "Dancing Script";
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 20%;
-    content: 'Veille Technologique';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 190, 0, 0.7);
-    border-radius: 25px;
-    transition: all ease-in-out .2s;
-    opacity: 0;
-}
-#veille:hover::after {
-    opacity: 1;
-}
-
-#nkauto {
-    position: relative;
-}
-#nkauto::after {
-    font-family: "Dancing Script";
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 20%;
-    content: 'NK Auto';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 190, 0, 0.7);
-    border-radius: 25px;
-    transition: all ease-in-out .2s;
-    opacity: 0;
-}
-#nkauto:hover::after {
-    opacity: 1;
-}
-
-#facilieam {
-    position: relative;
-}
-#faciliteam::after {
-    font-family: "Dancing Script";
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 20%;
-    content: 'Faciliteam';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 190, 0, 0.7);
-    border-radius: 25px;
-    transition: all ease-in-out .2s;
-    opacity: 0;
-}
-#faciliteam:hover::after {
-    opacity: 1;
 }
