@@ -21,6 +21,10 @@ p {
 }
 
 /* Autres */
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .cursor-help {
     cursor: help;
 }
@@ -120,7 +124,6 @@ p {
 .social {
     font-size: 1.4rem;
 }
-
 
 /* Page des réalisations */
 /* Rotation des images */

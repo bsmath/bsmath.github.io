@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <!-- Balise meta -->
     <meta charset="UTF-8">
@@ -17,15 +18,16 @@
     <!-- Icones -->
     <script src="https://kit.fontawesome.com/1a2c59f916.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
         <div class="container">
             <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
             <h2 id="navbar-brand" class="navbar-brand text-primary">Bes.Mathieu</h2>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,45 +42,297 @@
                         <a class="nav-link" href="#">Réalisations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#modalContact">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </nav><!-- /Navigation-->
-    
+
     <!-- Réalisations -->
     <section id="realisations" class="py-5">
         <div class="container-fluid mt-xl-5 py-xl-5">
             <div class="row">
-                <a href="sites/Veille Technologique/index.html" target="_blank" id="veille" class="col-12 col-xl-4 py-2">
+                <!-- Veille technologique -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal"
+                    data-target="#modalVeilleTechnologique">
                     <img class="img-realisation img-thumbnail" src="res/realisation/veilletechno.png">
                 </a>
-                <a href="https://nkauto91.fr/" target="_blank" id="nkauto" class="col-12 col-xl-4 py-2">
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalVeilleTechnologique" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Veille Technologique</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/veilletechno.png">
+                                <br /><br />
+                                Ce site permet de suivre la veille de technologique que je matiens à jour avec des
+                                articles qui sortent continuellement.<br />
+                                Pour rassembler toutes les informations et pouvoir les trier facilement j'utilise des
+                                flux RSS qui me rassemble les informations grâce à des mots clés puis je fais moi même
+                                le tri en retenant que l'essentiel.<br />
+                                Cette veille technologique fait partie de mon travail a realisé au cours de la formation
+                                que je mène actuellement.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="sites/Veille Technologique/index.html" class="btn btn-primary">Consulter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Veille technologique -->
+
+                <!-- NK Auto -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal" data-target="#modalNKAuto">
                     <img class="img-realisation img-thumbnail" src="res/realisation/nkauto.png">
                 </a>
-                <a href="https://faciliteam.fr/" target="_blank" id="faciliteam" class="col-12 col-xl-4 py-2">
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalNKAuto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">NK Auto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/nkauto.png">
+                                <br /><br />
+                                Nkauto91.fr est un site que j'ai réalisé entièrement lors d'un stage de cinq semaines
+                                dans lequel j'ai dû mettre à profit toutes les connaissances que j'ai appris au niveau
+                                de la programmation web. J'ai aussi dû faire des recherche de moi même pour trouver
+                                comme implémenter certaines fonctionnalités qui était indispensables au bon
+                                fonctionnement du site internet.<br />
+                                Le site que le garage NK Auto m'a demandé devait remplir les critères suivant :
+                                <ul>
+                                    <li>Affichage d'un catalogue de voitures.</li>
+                                    <li>Ajouter facilement des véhicules sur le site.</li>
+                                    <li>Créer des bons de commande préremplis avec les informations de l'acheteur ainsi
+                                        que de la voiture lors de la vente d'un véhicule.</li>
+                                    <li>Affichage des informations importantes concernant le garage (moyens de
+                                        communication, adresse, horaires, formulaire de contact).</li>
+                                    <li>Faire un design épuré pour une compréhension efficace du site.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="https://nkauto91.fr/" class="btn btn-primary">Consulter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ NK Auto -->
+
+                <!-- Faciliteam -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal" data-target="#modalFaciliteam">
                     <img class="img-realisation img-thumbnail" src="res/realisation/faciliteam.png">
                 </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalFaciliteam" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Faciliteam</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/faciliteam.png">
+                                <br /><br />
+                                Lors d'un emploi dans l'entreprise Faciliteam j'ai été chargé de recréer le site qu'ils
+                                avaient déjà. Pour cette tâches j'ai dû retravailler le design pour un graphisme plus
+                                épuré en gardant uniquement les informations les plus utiles à l'entreprise. J'ai
+                                retravaillé le design pour le rendre plus aux goûts de nos jours.<br />
+                                Le site est rendu comme étant un site "flatdesign" et "onepage". Tout a été implémenté à
+                                la main avec l'utilisation d'une librairie nommée "Bootstrap".
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="https://faciliteam.fr/" class="btn btn-primary">Consulter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Faciliteam -->
+
+                <!-- BouHey -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal" data-target="#modalBouhey">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/bouhey.png">
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalBouhey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bouhey</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/bouhey.png">
+                                <br /><br />
+                                Le site BouHey! est un site marchand (fictif) qui a été réalisé lors de ma formation en
+                                BTS SIO ce site était un projet à deux pour faire mettre en applications nos
+                                connaissances en HTML / CSS ainsi et surtout en PHP. Ce site permettait alors d'avoir
+                                toutes les bases nécessaires à la création d'un site marchand fonctionnel. Ce site
+                                propose les donc les fonctionnalités suivantes :
+                                <ul>
+                                    <li>Une connexion / inscription utilisateur.</li>
+                                    <li>Une gestion d'un panier.</li>
+                                    <li>Une gestion des produits à mettre en "vente".</li>
+                                    <li>La création automatique d'un facture lors de la validation d'une commande.</li>
+                                </ul>
+                                Le principal but de se projet était de savoir gérer une base de données de produits et
+                                savoir la manipuler dans le langage PHP. Par la suite ce projet a été totalement migrée
+                                en PDO (Programmation Orientée Objet).
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="https://bouhey.000webhostapp.com/" class="btn btn-primary">Consulter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ BouHey -->
+
+                <!-- GSB 1 -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal" data-target="#modalGsb1">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/gsb1.jpg">
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalGsb1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">GSB 1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/gsb1.jpg">
+                                <br /><br />
+                                Le laboratoire GSB est un grand groupe industriel pharmaceutique, fruit de l’union du
+                                géant américain Galaxy et du conglomérat européen Swiss Bourdin. À la suite de cette
+                                fusion, le groupe a décidé de mutualiser ses ressources afin de réaliser des économies
+                                d’échelles et d’améliorer la distributions de ces médicaments.<br />
+                                Dans cette optique, de faire mieux avec moins, l’entreprise nous a confié la mission
+                                d’améliorer l’application de gestion de frais du laboratoire. Pour cela, nous nous
+                                basons sur l’application web déjà existante que nous allons faire évoluer. L’application
+                                devra permettre le suivi des dépenses des visiteurs par l’équipe comptable.<br />
+                                Notre projet est donc, de mettre en place de nouvelles fonctionnalitées ainsi que la
+                                mise à niveau de certains éléments afin de garantir une application conforme aux
+                                standards actuels de sécurité et d’ergonomie.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!-- <a href="#" class="btn btn-primary">Consulter</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ GSB1 -->
             </div>
         </div>
     </section><!-- /Réalisations -->
 
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-user text-primary"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                placeholder="Nom et prénom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-envelope text-primary"></i></div>
+                            </div>
+                            <input type="email" class="form-control" id="nombre" name="email"
+                                placeholder="adresse@mail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-comment text-primary"></i></div>
+                            </div>
+                            <textarea class="form-control" placeholder="Votre message ..." required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">Envoyer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact -->
     <footer id="contact" class="container-fluid py-3 text-light">
         <div class="container text-center">
-            <a class="text-light" href="https://www.linkedin.com/in/mathieu-bes-498085155" target="_blank"><i class="social fab fa-linkedin px-2"></i></a>
+            <a class="text-light" href="https://www.linkedin.com/in/mathieu-bes-498085155" target="_blank"><i
+                    class="social fab fa-linkedin px-2"></i></a>
             <a class="text-light" href=""><i class="social fab fa-instagram px-2" target="_blank"></i></a>
-            <a class="text-light" href="https://twitter.com/Kenxxxy"><i class="social fab fa-twitter px-2" target="_blank"></i></a>
-            <a class="text-light" href="https://github.com/bsmath"><i class="social fab fa-github px-2" target="_blank"></i></a>
+            <a class="text-light" href="https://twitter.com/Kenxxxy"><i class="social fab fa-twitter px-2"
+                    target="_blank"></i></a>
+            <a class="text-light" href="https://github.com/bsmath"><i class="social fab fa-github px-2"
+                    target="_blank"></i></a>
 
         </div>
-    </section>
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
 </body>
+
 </html>
