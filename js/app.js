@@ -17,8 +17,6 @@ $(document).ready(function () {
 
     let randomDeg = 0;
     $(".img-realisation").each(function () {
-        randomDeg = Math.round(randomWithRange(-5, 5));
-        $(this).css("transform", "rotate(" + randomDeg + "deg)");
         $(this).on("mouseover", function () {
             $(this).css("transform", "rotate(0deg)");
         });
