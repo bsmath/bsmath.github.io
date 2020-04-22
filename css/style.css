@@ -84,6 +84,10 @@ p {
     left: 0;
 }
 
+.dropdown-item:hover {
+    background-color: rgba(0, 210, 0, 0.1);
+}
+
 /* Background accueil */
 .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../res/accueil/background.jpg');

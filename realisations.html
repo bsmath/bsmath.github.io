@@ -24,10 +24,10 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
         <div class="container">
             <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
-            <h2 id="navbar-brand" class="navbar-brand text-primary">Bes.Mathieu</h2>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <h2 id="navbar-brand" class="navbar-brand">Bes.Mathieu</h2>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,55 +41,169 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Réalisations</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#modalContact">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Veilles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sites/Veille Technologique/index.html">Veille Technologique</a>
+                            <a class="dropdown-item" href="sites/veille Juridique/index.html">Veille Juridique</a>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
     </nav><!-- /Navigation-->
 
     <!-- Réalisations -->
     <section id="realisations" class="py-5">
         <div class="container-fluid mt-xl-5 py-xl-5">
             <div class="row">
-                <!-- Veille technologique -->
+                <!-- Improve Your Dact -->
                 <!-- Button trigger modal -->
                 <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal"
-                    data-target="#modalVeilleTechnologique">
-                    <img class="img-realisation img-thumbnail" src="res/realisation/veilletechno.png">
+                    data-target="#modalImproveYourDact">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/improve-your-dact-thumbnail.png">
                 </a>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modalVeilleTechnologique" tabindex="-1" role="dialog"
+                <div class="modal fade" id="modalImproveYourDact" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Veille Technologique</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">ImproveYourDact'</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body text-justify">
-                                <img class="img-thumbnail" src="res/realisation/veilletechno.png">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item" src="res/realisation/improve-your-dact.mov">
+                                </div>
                                 <br /><br />
-                                Ce site permet de suivre la veille de technologique que je matiens à jour avec des
-                                articles qui sortent continuellement.<br />
-                                Pour rassembler toutes les informations et pouvoir les trier facilement j'utilise des
-                                flux RSS qui me rassemble les informations grâce à des mots clés puis je fais moi même
-                                le tri en retenant que l'essentiel.<br />
-                                Cette veille technologique fait partie de mon travail a realisé au cours de la formation
-                                que je mène actuellement.
+                                Ce logiciel est un projet personnel qui est pour l'instant au premier stade.
+                                Les fonctionnalités présentes à ce jour sont : 
+                                <ul>
+                                    <li>Test de dactylographie de 1 minute.</li>
+                                    <li>Statistiques des tests (image ci-dessous).</li>
+                                    <li>Sauvegarde temporelle des données</li>
+                                </ul>
+                                <img class="img-thumbnail" src="res/realisation/improve-your-dact.png">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="sites/Veille Technologique/index.html" class="btn btn-primary">Consulter</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--/ Veille technologique -->
+                <!--/ Improve Your Dact -->
+
+                <!-- Star shower -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal"
+                    data-target="#modalStarShower">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/star-shower.png">
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalStarShower" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pluie d'étoiles</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/star-shower.png">
+                                <br /><br />
+                                Cette animation a été entièrement réalisé en Javascript. Elle montre une ambiance de soirée remplis d'étoiles qui tombent du ciel et qui dégagent des particules lors d'impacts.
+                                Cette réalisation est totalement aléatoire et infini... Elle peut être importé en fond d'un site internet.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="sites/star-shower/index.html" class="btn btn-primary">Consulter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Star shower -->
+
+                <!-- LSMakeup -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal"
+                    data-target="#modalLsmakeup">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/lsmakeup.png">
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalLsmakeup" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">LSMakeup</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/lsmakeup.png">
+                                <br />
+                                Participation à la création du site en donnant des conseils de mise en page, de législations.<br/>
+                                Corrections que certains problèmes.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ LSMakeup -->
+
+                <!-- Werkstatt -->
+                <!-- Button trigger modal -->
+                <a class="col-12 col-xl-4 py-3 cursor-pointer" data-toggle="modal"
+                    data-target="#modalWerkstatt">
+                    <img class="img-realisation img-thumbnail" src="res/realisation/openstreetmap-werkstatt.png">
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalWerkstatt" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Openstreetmap Werkstatt</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-justify">
+                                <img class="img-thumbnail" src="res/realisation/openstreetmap-werkstatt.png">
+                                <br /><br />
+                                Ce site a été réalisé lors de mon stage en deuxième année de BTS SIO.
+                                Ce projet à pour objectif, dans un context de pérnurie de carburant, de proposer une carte qui dévoilerait les éléments suivants :
+                                <ul>
+                                <li>La localisation des stations services</li>
+                                <li>Un Selecteur pour choisir Tout carburant - Diesel - Essence</li>
+                                <li>Le statut de la station Ouverte / Fermée</li>
+                                <li>Un système de clustering pour éviter d'afficher plusieurs milliers de stations d'un coup</li>
+                                <li>Au clic sur la pin de la station il faudrait pouvoir afficher un volet avec les informations suivantes : 
+Marque / adresse / Carburants dispo et indispo / Statut de la station. </li>
+                                </ul>
+                                Et pour faire face à la concurence, Werkstatt a voulu parier sur un point très important... La rapidité d'exécution qui pourra permettre à un utilisateur pressé d'avoir la bonne informations le plus rapidement possible.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Werkstatt -->
 
                 <!-- NK Auto -->
                 <!-- Button trigger modal -->
@@ -260,53 +374,6 @@
             </div>
         </div>
     </section><!-- /Réalisations -->
-
-    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fa fa-user text-primary"></i></div>
-                            </div>
-                            <input type="text" class="form-control" id="nombre" name="nombre"
-                                placeholder="Nom et prénom" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fa fa-envelope text-primary"></i></div>
-                            </div>
-                            <input type="email" class="form-control" id="nombre" name="email"
-                                placeholder="adresse@mail.com" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fa fa-comment text-primary"></i></div>
-                            </div>
-                            <textarea class="form-control" placeholder="Votre message ..." required></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="#" class="btn btn-primary">Envoyer</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Contact -->
     <footer id="contact" class="container-fluid py-3 text-light">

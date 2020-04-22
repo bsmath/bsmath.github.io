@@ -14,16 +14,6 @@ $(document).ready(function () {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-
-    let randomDeg = 0;
-    $(".img-realisation").each(function () {
-        $(this).on("mouseover", function () {
-            $(this).css("transform", "rotate(0deg)");
-        });
-        $(this).on("mouseout", function () {
-            $(this).css("transform", "rotate(" + Math.round(randomWithRange(-5, 5)) + "deg)");
-        });
-    });
 });
 // Navbar scrolling change
 $(document).on('scroll', function () {

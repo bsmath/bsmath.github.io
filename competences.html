@@ -25,10 +25,10 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
         <div class="container">
             <!-- TODO: Demander avis entre "Bs.Mathieu" et "Bes.Mathieu" -->
-            <h2 id="navbar-brand text-primary" class="navbar-brand text-primary">Bes.Mathieu</h2>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <h2 id="navbar-brand" class="navbar-brand">Bes.Mathieu</h2>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,12 +42,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="realisations.html">Réalisations</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Veilles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sites/Veille Technologique/index.html">Veille Technologique</a>
+                            <a class="dropdown-item" href="sites/veille Juridique/index.html">Veille Juridique</a>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
     </nav><!-- /Navigation-->
 
     <!-- Compétences -->
@@ -56,6 +62,8 @@
             <h1 class="mt-2 section-title text-primary border-bottom">Compétences, diplômes et formations</h1>
 
             <div class="row py-3">
+                <a href="https://10fastfingers.com/typing-test/french"><img src="http://img.10fastfingers.com/badge/typing-test_3_EF.png" alt="Typing Test" /></a><p>Visit the <a href="https://10fastfingers.com/typing-test/french">Typing Test</a> and try!</p>
+
                 <div class="col-6 col-md-4 py-2">
                     <!-- HTML -->
                     <div class="progress mx-auto progress-animation" data-value='90'>
@@ -245,6 +253,8 @@
                 </blockquote>
             </div>
 
+            <a href="https://10fastfingers.com/typing-test/french"><img src="http://img.10fastfingers.com/badge/typing-test_3_DQ.png" alt="Typing Test" /></a><p>Visit the <a href="https://10fastfingers.com/typing-test/french">Typing Test</a> and try!</p>
+
             <!-- Diplômes -->
             <!-- Baccalauréat -->
             <div class="row py-2">
@@ -271,6 +281,47 @@
     <section id="experiences" class="my-5">
         <div class="container">
             <h1 class="mt-2 section-title text-primary border-bottom">Expériences professionnelles</h1>
+
+            <!-- Faciliteam : Semaine de remplacement -->
+            <div class="row py-2">
+                <div class="col-12 col-md-6">
+                    <strong class="h5">Technicien systèmes et réseaux</strong>
+                </div>
+                <div class="col-12 col-md-6 text-right">
+                    <p>
+                        <span class="text-primary">Faciliteam</span> à Champlan, France <sup class="text-dark">/ du 10 février 2020 au 14 février 2020</sup>
+                    </p>
+                </div>
+
+                <blockquote class="ml-auto col-11 border-left border-primary text-justify">
+                    Remplacement d'un techniien au support<br/>
+                    <br/>
+                    Tâches réalisées :<br/>
+                    <ul>
+                        <li>Prise en charge de dépannages à distance.</li>
+                        <li>Maintenance de tickets.</li>
+                        <li>Installation et configuration d'un NAS QNAP avec replacement du DHCP par un adressage fixe sur le réseaux interne.</li>
+                    </ul>
+                </blockquote>
+            </div>
+
+            <!-- Stage de deuxième année : Werkstatt -->
+            <div class="row py-2">
+                <div class="col-12 col-md-6">
+                    <strong class="h5">Stage développeur application NodeJS</strong>
+                </div>
+                <div class="col-12 col-md-6 text-right">
+                    <p>
+                        <span class="text-primary">Werkstatt - 03July</span> à Paris, France <sup class="text-dark">/ du 6 janvier 2020 au 7 février 2020</sup>
+                    </p>
+                </div>
+
+                <blockquote class="ml-auto col-11 border-left border-primary text-justify">
+                    Lors de ce stage j'ai eu pour mission de réaliser une application permettant d'afficher une carte regroupant toutes les stations essences de France ainsi que leur disponibilités.
+                    <br/>
+                    J'ai également participé à au remplissage de contenu ainsi que la mise en ligne d'un site internet pour l'entreprise Urbanis.
+                </blockquote>
+            </div>
 
             <!-- Faciliteam : Migration EPIN -->
             <div class="row py-2">
@@ -301,7 +352,7 @@
                 </div>
                 <div class="col-12 col-md-6 text-right">
                     <p>
-                        <span class="text-primary">Faciliteam</span> à Champlan, France <sup class="text-dark">/ de 22 juillet au 31 août 2019</sup>
+                        <span class="text-primary">Faciliteam</span> à Champlan, France <sup class="text-dark">/ de 22 juillet 2019 au 31 août 2019</sup>
                     </p>
                 </div>
 
